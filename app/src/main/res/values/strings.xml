@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">travel_peru</string>
+    <string name="titulo">Explora el Perú</string>
+    <string name="subTitulo">Administra tus viajes con travel Perú</string>
+    <string name="empecemos">Empecemos</string>
+    <string name="usuario">Elian Regalado Plasencia</string>
+    <string name="viaja">Viaja sin preocupaciones</string>
+    <string name="bus">Buses</string>
+    <string name="tren">Trenes</string>
+    <string name="bote">Botes</string>
+    <string name="avion">Vuelos</string>
+    <string name="proximosH">Próximos horarios</string>
+    <string name="de">De</string>
+    <string name="tiempo">Tiempo</string>
+    <string name="a">a</string>
+    <string name="soles">S/ 0.00</string>
+</resources>
