@@ -14,4 +14,5 @@
     <string name="tiempo">Tiempo</string>
     <string name="a">a</string>
     <string name="soles">S/ 0.00</string>
+    <string name="peso">Peso Kg.</string>
 </resources>
