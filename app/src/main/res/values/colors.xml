@@ -13,4 +13,5 @@
     <color name="azul03">#0F172A</color>
     <color name="gris">#EFEFEF</color>
     <color name="celeste">#3DAEF0</color>
+    <color name="negro_transparente">#AA000000</color>
 </resources>
