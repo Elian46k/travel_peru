@@ -46,7 +46,7 @@
         app:srcCompat="@drawable/linea_punteada" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/txtDe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -58,16 +58,16 @@
         app:layout_constraintTop_toBottomOf="@+id/logo" />
 
     <TextView
-        android:id="@+id/txtDelugar"
+        android:id="@+id/txtLugarOrigen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
         android:textColor="@color/black"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="@+id/txtDe"
         app:layout_constraintHorizontal_bias="0.41"
-        app:layout_constraintStart_toStartOf="@+id/textView9"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintStart_toStartOf="@+id/txtDe"
+        app:layout_constraintTop_toBottomOf="@+id/txtDe" />
 
     <TextView
         android:id="@+id/txtTiempo"
@@ -90,10 +90,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.523"
         app:layout_constraintStart_toEndOf="@+id/imageView6"
-        app:layout_constraintTop_toTopOf="@+id/textView9" />
+        app:layout_constraintTop_toTopOf="@+id/txtDe" />
 
     <TextView
-        android:id="@+id/txtAlugar"
+        android:id="@+id/txtDestino"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"

@@ -10,4 +10,9 @@
         <item name="cornerSize">50%</item>
         <item name="cornerFamily">rounded</item>
     </style>
+
+    <style name="cornerImagen">
+        <item name="cornerSize">30dp</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
 </resources>

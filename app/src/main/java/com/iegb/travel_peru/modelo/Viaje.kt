@@ -1,15 +1,15 @@
 package com.iegb.travel_peru.modelo
 
-data class Trip(
-    val companyLogo: String = "",
-    val companyName: String = "",
-    val arriveTime: String = "",
-    val date: String = "",
-    val from: String = "",
-    val fromShort: String = "",
-    val price: Double = 0.0,
-    val time: String = "",
-    val to: String = "",
-    val score: Int = 0,
-    val toShort: String = ""
+data class Viaje(
+    val logoCompania: String = "",
+    val nombreCompania: String = "",
+    val duracionVuelo: String = "",
+    val fecha: String = "",
+    val origen: String = "",
+    val origenCodigo: String = "",
+    val precio: Double = 0.0,
+    val horaSalida: String = "",
+    val destino: String = "",
+    val puntaje: Double = 0.0,
+    val codigoDestino: String = ""
 )

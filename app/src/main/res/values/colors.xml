@@ -14,4 +14,5 @@
     <color name="gris">#EFEFEF</color>
     <color name="celeste">#3DAEF0</color>
     <color name="negro_transparente">#AA000000</color>
+    <color name="mit_black">#70000000</color>
 </resources>
