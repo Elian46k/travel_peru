@@ -1,4 +1,4 @@
-package com.iegb.travel_peru.modelo
+package com.iegb.travel_peru.Modelo
 
 data class Viaje(
     val logoCompania: String = "",

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/fondoPrincipal"
-    tools:context=".MainActivity">
+    tools:context=".Activity.MainActivity">
 
     <ScrollView
         android:id="@+id/scrollView2"
@@ -76,6 +76,7 @@
                 android:orientation="horizontal">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cat1"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_marginHorizontal="8dp"
@@ -106,6 +107,7 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cat2"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_marginHorizontal="8dp"
@@ -136,6 +138,7 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cat3"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_marginHorizontal="8dp"
@@ -166,6 +169,7 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cat4"
                     android:layout_width="0dp"
                     android:layout_height="75dp"
                     android:layout_marginHorizontal="8dp"
@@ -262,6 +266,7 @@
                     android:id="@+id/viewRecomendado"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
                     android:clipToPadding="false"
                     android:paddingStart="8dp"
                     android:paddingEnd="8dp"
