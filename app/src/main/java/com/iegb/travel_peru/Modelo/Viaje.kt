@@ -1,5 +1,7 @@
 package com.iegb.travel_peru.Modelo
 
+import java.io.Serializable
+
 data class Viaje(
     val logoCompania: String = "",
     val nombreCompania: String = "",
@@ -12,4 +14,4 @@ data class Viaje(
     val destino: String = "",
     val puntaje: Double = 0.0,
     val codigoDestino: String = ""
-)
+): Serializable

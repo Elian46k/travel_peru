@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1006245541414",
+    "project_id": "travelperu-001",
+    "storage_bucket": "travelperu-001.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1006245541414:android:7abf796817fddf086298e7",
+        "android_client_info": {
+          "package_name": "com.iegb.travel_peru"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXrZeXn8i8N3dzqdG0wSP8RVdvXN34W0s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
