@@ -33,7 +33,13 @@ class AdapViajes (private val viajes: List<Viaje>)
             .into(holder.binding.logo)
 
         holder.binding.txtCompania.text = viaje.nombreCompania
-        //holder.binding.txtDe.text = viaje.
+        holder.binding.txtDe.text = viaje.origen
+        holder.binding.txtLugarOrigen.text = viaje.origenCodigo
+        holder.binding.atxt.text = viaje.destino
+        holder.binding.txtDestino.text = viaje.codigoDestino
+        holder.binding.txtDuracionVuelo.text = viaje.duracionVuelo
+        holder.binding.txtPuntuacion.text = viaje.puntaje.toString()
+        holder.binding.txtPrecio.text = "S/.${viaje.precio}"
     }
 
     override fun getItemCount(): Int = viajes.size

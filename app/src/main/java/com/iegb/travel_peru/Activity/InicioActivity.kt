@@ -8,6 +8,7 @@ import android.widget.Button
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.iegb.travel_peru.Adaptadores.AdapViajes
 import com.iegb.travel_peru.R
 import com.iegb.travel_peru.VistaModelo.Main_VistaModelo
 import com.iegb.travel_peru.databinding.ActivityMainBinding
@@ -42,7 +43,7 @@ class InicioActivity : AppCompatActivity() {
                     this@InicioActivity,
                     LinearLayoutManager.HORIZONTAL,false
                 )
-                //adapter =
+                adapter = AdapViajes(list)
             }
         }
     }
