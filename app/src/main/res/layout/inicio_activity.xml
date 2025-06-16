@@ -27,7 +27,7 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:id="@+id/imageView2"
+                    android:id="@+id/imgPerfil_User_inicio"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:layout_marginStart="16dp"
@@ -37,25 +37,25 @@
                     app:srcCompat="@drawable/perfil" />
 
                 <TextView
-                    android:id="@+id/textView4"
+                    android:id="@+id/txtNombreUsuarioInicio"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:text="@string/usuario"
                     android:textColor="@color/black"
                     android:textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-                    app:layout_constraintStart_toEndOf="@+id/imageView2"
-                    app:layout_constraintTop_toTopOf="@+id/imageView2" />
+                    app:layout_constraintBottom_toBottomOf="@+id/imgPerfil_User_inicio"
+                    app:layout_constraintStart_toEndOf="@+id/imgPerfil_User_inicio"
+                    app:layout_constraintTop_toTopOf="@+id/imgPerfil_User_inicio" />
 
                 <ImageView
                     android:id="@+id/imageView3"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:layout_marginEnd="16dp"
-                    app:layout_constraintBottom_toBottomOf="@+id/textView4"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtNombreUsuarioInicio"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/textView4"
+                    app:layout_constraintTop_toTopOf="@+id/txtNombreUsuarioInicio"
                     app:srcCompat="@drawable/notificacion" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
