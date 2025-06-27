@@ -7,6 +7,7 @@ import com.google.firebase.database.ValueEventListener
 import com.iegb.travel_peru.Modelo.Viaje
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
+import com.iegb.travel_peru.Modelo.Lugar
 
 
 class ViajesRepositorio {
@@ -18,6 +19,22 @@ class ViajesRepositorio {
             .addListenerForSingleValueEvent(object: ValueEventListener{
                 override fun onDataChange(snapshot: DataSnapshot) {
                     val list = snapshot.children.mapNotNull { it.getValue(Viaje::class.java) }
+                    data.postValue(list)
+                }
+
+                override fun onCancelled(error: DatabaseError) {
+                    data.postValue(emptyList())
+                }
+            })
+        return  data
+    }
+
+    fun getLugaresRecomendados(): LiveData<List<Lugar>>{
+        val data = MutableLiveData<List<Lugar>>()
+        database.child("LugarRecomendado")
+            .addListenerForSingleValueEvent(object: ValueEventListener{
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    val list = snapshot.children.mapNotNull { it.getValue(Lugar::class.java) }
                     data.postValue(list)
                 }
 

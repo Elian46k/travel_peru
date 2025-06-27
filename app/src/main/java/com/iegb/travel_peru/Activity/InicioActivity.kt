@@ -51,12 +51,14 @@
 
 package com.iegb.travel_peru.Activity
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.view.View
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.iegb.travel_peru.Adaptadores.AdapRecomendado
 import com.iegb.travel_peru.Adaptadores.AdapViajes
 import com.iegb.travel_peru.VistaModelo.Main_VistaModelo
 import com.iegb.travel_peru.databinding.InicioActivityBinding
@@ -75,6 +77,12 @@ class InicioActivity : AppCompatActivity() {
         modeloVistaObservacion()
         
         window.statusBarColor = Color.BLACK
+
+        //llamado del login
+//        binding.txtNombreUsuarioInicio.setOnClickListener {
+//            val intent = Intent(this, LoginActivity::class.java)
+//            startActivity(intent)
+//        }
     }
 
     private fun modeloVistaObservacion() {
@@ -89,6 +97,19 @@ class InicioActivity : AppCompatActivity() {
                     false
                 )
                 adapter = AdapViajes(list)
+            }
+        }
+
+        viewModel.LugaresRecomendados.observe(this) {list->
+            binding.pbRecomendado.visibility= View.GONE
+
+            binding.viewRecomendado.apply {
+                layoutManager = LinearLayoutManager(
+                    this@InicioActivity,
+                    LinearLayoutManager.HORIZONTAL,
+                    false
+                )
+                adapter = AdapRecomendado(list)
             }
         }
     }
