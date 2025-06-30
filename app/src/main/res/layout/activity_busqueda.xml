@@ -133,7 +133,7 @@
                         app:srcCompat="@drawable/ubicacion" />
 
                     <ProgressBar
-                        android:id="@+id/progressBar"
+                        android:id="@+id/progressBarHacia"
                         style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Small"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -143,7 +143,7 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <Spinner
-                        android:id="@+id/A_sp"
+                        android:id="@+id/Hacia_sp"
                         android:layout_width="0dp"
                         android:layout_height="0dp"
                         android:layout_marginStart="8dp"

@@ -11,6 +11,7 @@ import com.iegb.travel_peru.Adaptadores.AdapRecomendado
 import com.iegb.travel_peru.Adaptadores.AdapViajes
 import com.iegb.travel_peru.VistaModelo.Main_VistaModelo
 import com.iegb.travel_peru.databinding.InicioActivityBinding
+import com.iegb.travel_peru.Activity.BusquedaActivity
 
 class InicioActivity : AppCompatActivity() {
 
@@ -24,8 +25,17 @@ class InicioActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         modeloVistaObservacion()
+
+        configurarEscuchaCategorias()
         
         window.statusBarColor = Color.BLACK
+    }
+
+    private fun configurarEscuchaCategorias() {
+        binding.cat1.setOnClickListener {
+            val intent = Intent(this, BusquedaActivity::class.java)
+            intent.putExtra("categoria", "1")
+            startActivity(intent) }
     }
 
     private fun modeloVistaObservacion() {
