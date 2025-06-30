@@ -9,5 +9,5 @@ import com.iegb.travel_peru.Repositorio.ViajesRepositorio
 class Main_VistaModelo : ViewModel(){
     private val repositorio: ViajesRepositorio = ViajesRepositorio()
     val upcomingTrips: LiveData<List<Viaje>> = repositorio.proximosViajes()
-    val LugaresRecomendados: LiveData<List<Lugar>> = repositorio.getLugaresRecomendados()
+    val recomendedPlaces: LiveData<List<Lugar>> = repositorio.getLugaresRecomendados()
 }

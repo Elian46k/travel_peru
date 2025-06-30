@@ -31,7 +31,7 @@ class ViajesRepositorio {
 
     fun getLugaresRecomendados(): LiveData<List<Lugar>>{
         val data = MutableLiveData<List<Lugar>>()
-        database.child("LugarRecomendado")
+        database.child("LugaresRecomendados")
             .addListenerForSingleValueEvent(object: ValueEventListener{
                 override fun onDataChange(snapshot: DataSnapshot) {
                     val list = snapshot.children.mapNotNull { it.getValue(Lugar::class.java) }
